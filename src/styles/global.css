@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+.hero {
+  @apply overflow-hidden bg-pink-100;
+  background: url("/static/group_18.png") repeat,
+    linear-gradient(rgba(252, 231, 243), rgba(251, 207, 232));
+  border-bottom-left-radius: 16rem;
+}
+
+.hero > div {
+  transform: translateY(4rem);
+}
