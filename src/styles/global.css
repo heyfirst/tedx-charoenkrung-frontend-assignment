@@ -6,6 +6,13 @@ html {
   font-family: "Nunito", sans-serif;
 }
 
+main {
+  background-image: url("/static/group_118.png");
+  background-size: 25rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: -10rem 50%;
+}
 .hero {
   @apply overflow-hidden bg-pink-100;
   background: url("/static/group_18.png") repeat,

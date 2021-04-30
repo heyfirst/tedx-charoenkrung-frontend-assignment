@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
 import React from "react";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 const TYPES = [
   {
@@ -55,11 +55,8 @@ const Home: React.FC = () => {
           </h2>
           <ul className="flex flex-row w-full mb-3 overflow-y-scroll sm:justify-center">
             {TYPES.map((type) => (
-              <li
-                className="inline-block mb-3 ml-6 mr-6 sm:ml-0 w-max"
-                key={type.title}
-              >
-                <div className="relative mb-3 h-36 w-36">
+              <li className="inline-block mx-6 mb-3 w-max" key={type.title}>
+                <div className="relative mb-3 transition transform h-36 w-36 hover:rotate-12">
                   <Image
                     src={type.icon}
                     height={150}
